@@ -35,12 +35,18 @@
     </head>
     <body  onload="onLoad()">
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
         <script type='text/javascript'>
             function onLoad() {
                 document.addEventListener("deviceready", onDeviceReady, false);
             };
 
             function onDeviceReady()
+            var socket = io('http://192.168.1.6:7777');
+            socket.on('connect', function(){
+                console.log('connect to server');
+            });
+
             // Enable background mode
             cordova.plugins.backgroundMode.enable();
             // Android customization
