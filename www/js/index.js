@@ -6,8 +6,21 @@ function onLoad() {
 //
 function onDeviceReady() {
 
-alert('');
-  var plugin = cordova.plugins.backgroundMode;
-  alert('aa');
+  document.addEventListener('deviceready', function () {
+      // Android customization
+      cordova.plugins.backgroundMode.setDefaults({ text:'Doing heavy tasks.'});
+      // Enable background mode
+      cordova.plugins.backgroundMode.enable();
+
+      // Called when background mode has been activated
+      cordova.plugins.backgroundMode.onactivate = function () {
+          setTimeout(function () {
+              // Modify the currently displayed notification
+              cordova.plugins.backgroundMode.configure({
+                  text:'Running in background for more than 5s now.'
+              });
+          }, 5000);
+      }
+  }, false);
 
 }
