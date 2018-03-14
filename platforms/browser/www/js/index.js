@@ -6,11 +6,17 @@ function onLoad() {
 //
 function onDeviceReady() {
 
-  document.addEventListener('deviceready', function () {
-      // Android customization
-      cordova.plugins.backgroundMode.setDefaults({ text:'Doing heavy tasks.'});
+
+
       // Enable background mode
       cordova.plugins.backgroundMode.enable();
+      // Android customization
+      cordova.plugins.backgroundMode.setDefaults({ text:'Doing heavy tasks.'});
+
+cordova.plugins.backgroundMode.onfailure = function(errorCode) {
+
+  alert(errorCode);
+};
 
       // Called when background mode has been activated
       cordova.plugins.backgroundMode.onactivate = function () {
@@ -21,6 +27,6 @@ function onDeviceReady() {
               });
           }, 5000);
       }
-  }, false);
+
 
 }
