@@ -6,7 +6,7 @@ function onLoad() {
 //
 function onDeviceReady() {
 
-alert();
+alert('');
   var plugin = cordova.plugins.backgroundMode;
   alert('aa');
 
