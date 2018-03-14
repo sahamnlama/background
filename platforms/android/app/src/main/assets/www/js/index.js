@@ -10,8 +10,10 @@ function aaa1(){
 //
 function onDeviceReady() {
       //var ref =
-      var ref =cordova.InAppBrowser.open('signelsvr_conn.html', '_blank', 'location=no,hidden=yes');
-      ref.hide();
+      var socket = io('http://192.168.1.6:7777');
+      socket.on('connect', function(){
+        console.log('connect to server');
+      });
       // Enable background mode
       cordova.plugins.backgroundMode.enable();
       // Android customization
