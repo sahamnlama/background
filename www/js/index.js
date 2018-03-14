@@ -23,9 +23,11 @@ cordova.plugins.backgroundMode.onfailure = function(errorCode) {
           setTimeout(function () {
               // Modify the currently displayed notification
               cordova.plugins.backgroundMode.configure({
-                  text:'Running in background for more than 5s now.'
+                  text:'Running in background for more than 5s now.',
+                  hidden: false,
+                  resume: true
               });
-          }, 5000);
+          }, 10000);
       }
 
 
