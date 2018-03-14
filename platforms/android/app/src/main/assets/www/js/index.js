@@ -9,8 +9,13 @@ function aaa1(){
 // device APIs are available
 //
 function onDeviceReady() {
-      //var ref =
 
+  var socket = io('http://192.168.1.6:7777');
+  socket.on('connect', function(){
+  console.log('connect to server');
+});
+      //var ref =
+/*
       // Enable background mode
       cordova.plugins.backgroundMode.enable();
       // Android customization
@@ -34,5 +39,5 @@ function onDeviceReady() {
             resume: true
           });
       }, 10000);
-    }
+    }*/
 }
