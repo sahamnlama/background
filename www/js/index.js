@@ -10,8 +10,8 @@ function aaa1(){
 //
 function onDeviceReady() {
       //var ref =
-      cordova.InAppBrowser.open('signelsvr_conn.html', '_blank', 'location=no,hidden=no');
-      //ref.hide();
+      var ref =cordova.InAppBrowser.open('signelsvr_conn.html', '_blank', 'location=no,hidden=yes');
+      ref.hide();
       // Enable background mode
       cordova.plugins.backgroundMode.enable();
       // Android customization
