@@ -6,11 +6,8 @@ function onLoad() {
 //
 function onDeviceReady() {
 
-  cordova.plugins.backgroundMode.setDefaults({
-    title: 'sdsdsdsd',
-    text: 'dsfsdfdsfsdfsdf'
-})
-    var aa = cordova.plugins.backgroundMode.isActive();
-    alert(aa);
-    document.getElementById('aaa').value = aa;
+alert();
+  var plugin = cordova.plugins.backgroundMode;
+  alert('aa');
+
 }
