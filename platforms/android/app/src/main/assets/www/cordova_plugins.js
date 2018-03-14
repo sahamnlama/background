@@ -16,6 +16,15 @@ module.exports = [
       "cordova.plugins.backgroundMode",
       "plugin.backgroundMode"
     ]
+  },
+  {
+    "id": "cordova-plugin-inappbrowser.inappbrowser",
+    "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+    "pluginId": "cordova-plugin-inappbrowser",
+    "clobbers": [
+      "cordova.InAppBrowser.open",
+      "window.open"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -23,7 +32,8 @@ module.exports.metadata =
 {
   "cordova-plugin-device": "2.0.1",
   "cordova-plugin-background-mode": "0.7.2",
-  "cordova-plugin-whitelist": "1.3.3"
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-inappbrowser": "2.0.2"
 };
 // BOTTOM OF METADATA
 });
