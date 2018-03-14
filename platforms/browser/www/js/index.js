@@ -9,6 +9,8 @@ function onDeviceReady() {
 
 
       // 1) Request background execution
+      cordova.plugins.backgroundMode.enable();
+
 
 
     // Add similar listeners for other events
