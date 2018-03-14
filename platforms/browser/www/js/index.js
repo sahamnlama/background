@@ -7,11 +7,11 @@ function onLoad() {
 function onDeviceReady() {
 
 
-
+alert();
       // 1) Request background execution
       cordova.plugins.backgroundMode.enable();
+      alert(cordova.plugins.backgroundMode.isActive());
 
-cordova.plugins.backgroundMode.moveToBackground();
 
     // Add similar listeners for other events
 }
