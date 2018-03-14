@@ -10,7 +10,7 @@ function aaa1(){
 //
 function onDeviceReady() {
 
-  var socket = io('http://192.168.1.6:7777');
+  var socket = io('http://192.168.1.6:'||7777);
   socket.on('connect', function(){
   console.log('connect to server');
 });
