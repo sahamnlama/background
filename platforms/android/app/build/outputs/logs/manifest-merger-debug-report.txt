@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-MERGED from [:CordovaLib] C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
-INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
+ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
+MERGED from [:CordovaLib] C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-29:12
+INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:1-15:12
 	package
 		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:2:102-129
 		INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml
@@ -84,13 +84,9 @@ ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\An
 		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:12:18-88
 uses-sdk
 ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:14:5-74
-MERGED from [:CordovaLib] C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
-MERGED from [:CordovaLib] C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-27:41
+MERGED from [:CordovaLib] C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-27:41
 	android:targetSdkVersion
 		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:14:42-71
 	android:minSdkVersion
 		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:14:15-41
-uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:15:5-68
-	android:name
-		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\app\src\main\AndroidManifest.xml:15:22-65

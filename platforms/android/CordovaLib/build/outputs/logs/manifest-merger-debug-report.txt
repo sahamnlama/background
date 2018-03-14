@@ -22,6 +22,8 @@ INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\A
 		INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\AndroidManifest.xml
 		INJECTED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\AndroidManifest.xml:22:5-44
+ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\AndroidManifest.xml:22:5-74
+	android:targetSdkVersion
+		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\AndroidManifest.xml:22:42-71
 	android:minSdkVersion
 		ADDED from C:\Users\stl.ppt\Desktop\background\platforms\android\CordovaLib\AndroidManifest.xml:22:15-41
