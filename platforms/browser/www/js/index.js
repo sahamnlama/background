@@ -28,7 +28,7 @@ function onDeviceReady() {
     cordova.plugins.notification.local.schedule({
         title: 'FirstMessage',
         text: msg.data,
-        foreground: false
+        foreground: true
     });
   }
       //var ref =
