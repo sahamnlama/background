@@ -48,6 +48,9 @@ function onDeviceReady() {
     //alert(msg.data);
     switch(data.type) {
        case "door_bell":
+        console.log('someone visit');
+         var media = new Media('https://signellingsvr360owl.herokuapp.com/doorbell.mp3', function(){});
+         media.play();
          cordova.plugins.notification.local.schedule({
              title: 'FirstMessage',
              text: data.message,
