@@ -44,12 +44,20 @@ function onDeviceReady() {
 
   conn.onmessage = function (msg) {
     console.log("Got message", msg.data);
+    var data = JSON.parse(msg.data);
     //alert(msg.data);
-    cordova.plugins.notification.local.schedule({
-        title: 'FirstMessage',
-        text: msg.data,
-        foreground: true
-    });
+    switch(data.type) {
+       case "door_bell":
+         cordova.plugins.notification.local.schedule({
+             title: 'FirstMessage',
+             text: data.message,
+             foreground: true
+         });
+          break;
+       default:
+          break;
+    }
+
   }
       //var ref =
 /*

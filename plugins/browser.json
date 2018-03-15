@@ -18,6 +18,9 @@
     },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.example.hello"
     }
   },
   "dependent_plugins": {
@@ -25,6 +28,9 @@
       "PACKAGE_NAME": "com.example.hello"
     },
     "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-file": {
       "PACKAGE_NAME": "com.example.hello"
     }
   }
