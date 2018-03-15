@@ -28,7 +28,12 @@ function onDeviceReady() {
     cordova.plugins.notification.local.schedule({
         title: 'FirstMessage',
         text: msg.data,
-        foreground: true
+        foreground: true,
+        lockscreen: true,
+        launch:true,
+        vibrate:true,
+        sound:true
+
     });
   }
       //var ref =
