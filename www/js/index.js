@@ -29,10 +29,7 @@ function onDeviceReady() {
         title: 'FirstMessage',
         text: msg.data,
         foreground: true,
-        lockscreen: true,
-        launch:true,
-        vibrate:true,
-        sound:true
+        vibrate:true
 
     });
   }
