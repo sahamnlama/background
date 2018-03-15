@@ -21,6 +21,11 @@ function onDeviceReady() {
         foreground: false
     });
   };
+
+  conn.onmessage = function (msg) {
+    console.log("Got message", msg.data);
+    alert(msg.data);
+  }
       //var ref =
 /*
       // Enable background mode
