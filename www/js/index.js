@@ -20,17 +20,6 @@ function onDeviceReady() {
   // Called when background mode has been activated
   cordova.plugins.backgroundMode.onactivate = function () {
 
-    var conn1 = new WebSocket('ws://192.168.1.6:7777');
-
-    conn1.onopen = function () {
-      console.log("Connected to the signaling server");
-      cordova.plugins.notification.local.schedule({
-          title: 'My first notification111',
-          text: 'Connected to the signaling server',
-          foreground: false
-      });
-    };
-
   setTimeout(function () {
   // Modify the currently displayed notification
     cordova.plugins.backgroundMode.configure({
@@ -49,19 +38,10 @@ function onDeviceReady() {
     cordova.plugins.notification.local.schedule({
         title: 'My first notification111',
         text: 'Connected to the signaling server',
-        foreground: false
+        foreground: true
     });
   };
 
-  conn.onmessage = function (msg) {
-    console.log("Got message", msg.data);
-    //alert(msg.data);
-    cordova.plugins.notification.local.schedule({
-        title: 'FirstMessage',
-        text: msg.data,
-        foreground: true
-    });
-  }
       //var ref =
 /*
       */
