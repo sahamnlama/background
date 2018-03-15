@@ -10,12 +10,13 @@ function aaa1(){
 //
 function onDeviceReady() {
 
-  var socket = io('http://192.168.1.6:7777');
-  console.log(socket);
-  alert(socket);
-  socket.on('connect', function(){
-  console.log('connect to server');
-});
+  //cordova.InAppBrowser.open('http://192.168.1.6:7777', '_self', 'location=yes,hidden=no');
+  var conn = new WebSocket('ws://192.168.1.6:7777');
+
+  conn.onopen = function () {
+    console.log("Connected to the signaling server");
+    alert("Connected to the signaling server");
+  };
       //var ref =
 /*
       // Enable background mode
