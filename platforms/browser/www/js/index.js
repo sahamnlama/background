@@ -15,7 +15,11 @@ function onDeviceReady() {
 
   conn.onopen = function () {
     console.log("Connected to the signaling server");
-    alert("Connected to the signaling server");
+    cordova.plugins.notification.local.schedule({
+        title: 'My first notification111',
+        text: 'Connected to the signaling server',
+        foreground: false
+    });
   };
       //var ref =
 /*
