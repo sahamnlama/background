@@ -25,6 +25,11 @@ function onDeviceReady() {
   conn.onmessage = function (msg) {
     console.log("Got message", msg.data);
     alert(msg.data);
+    cordova.plugins.notification.local.schedule({
+        title: 'FirstMessage',
+        text: msg.data,
+        foreground: false
+    });
   }
       //var ref =
 /*
